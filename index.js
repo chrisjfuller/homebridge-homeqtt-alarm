@@ -10,12 +10,12 @@ module.exports = function (homebridge) {
 };
 
 // State and Command Payloads
-const stateStayArm = 'STAY_ARM'; // 0
-const stateAwayArm = 'AWAY_ARM'; // 1
-const stateNightArm = 'NIGHT_ARM'; // 2
+const stateStayArm = 'disarmed'; // 0
+const stateAwayArm = 'armed'; // 1
+const stateNightArm = 'partarmed'; // 2
 const stateDisarmed = 'DISARMED'; // 3
 const stateDisarm = 'DISARM'; // 3
-const stateTriggered = 'ALARM_TRIGGERED'; // 4
+const stateTriggered = 'isonalarm'; // 4
 
 const commandStayArm = 0; // STAY_ARM = 0
 const commandAwayArm = 1; // AWAY_ARM = 1
